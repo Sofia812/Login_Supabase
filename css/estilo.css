@@ -1,0 +1,216 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.geral {
+    background-color: #000123;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* Estilização - MENU */
+.fixed-top {
+    /* Define o estilo da barra de navegação fixa */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Fica à frente de outros elementos */
+    background-color: rgba(0, 7, 7, 0.404);
+    /* Transparência para o fundo do menu */
+}
+
+.carousel-item video {
+    margin-top: 100px;
+    width: 90%;
+    /* Largura do vídeo ajustada */
+    height: 100%;
+    /* Altura do vídeo ajustada */
+    object-fit: cover;
+    /* Ajusta o vídeo sem deformar, cortando o excesso */
+    border-radius: 8px;
+    /* Bordas arredondadas no vídeo */
+}
+
+
+/* Aproxima os botões de controle do carrossel para 5px das laterais */
+.carousel-control-prev {
+    left: -4vw;
+    /* Define a distância do botão anterior para a borda esquerda */
+}
+
+.carousel-control-next {
+    right: -4vw;
+    /* Define a distância do botão próximo para a borda direita */
+}
+
+p {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    text-align: justify;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+
+/* Centralizar linha */
+.centralizado {
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    display: block;
+    /* Garante que o elemento use a largura definida */
+}
+
+
+/* Cadastro */
+.cadastro {
+    background-color: #06102e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+    border-radius: 20px;
+    /* Bordas arredondadas */
+
+    width: 90%;
+    height: 470px;
+
+    text-align: center;
+    margin: 20px auto;
+}
+
+h3 {
+    padding-top: 30px;
+    text-align: left;
+    margin-left: 5vw;
+    margin-top: 20px;
+}
+
+/* estilição dos contennes - Cadastro */
+.container {
+    background-color: #101728;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+    border-radius: 20px;
+    /* Bordas arredondadas */
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+
+    margin-top: 20px;
+}
+
+.container>div {
+    flex: 1 1 280px;
+    padding: 10px;
+}
+
+
+/* Estilicação botão de Cadastro*/
+.col-sm-6 {
+    width: 400px;
+    height: 100px;
+    align-items: center;
+}
+
+.btn {
+    background: linear-gradient(to right, #ff5757, #8c52ff);
+    border-radius: 8px;
+    /* Bordas arredondadas no vídeo */
+
+    width: 120px;
+    height: 40px;
+
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+
+    margin: 50px 0px;
+}
+
+/* estilição dos contennes - Texto e imagem */
+.container_neutro {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 5px;
+
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    /* Centraliza verticalmente */
+    text-align: center;
+    /* Centraliza o texto */
+    margin: 20px auto;
+    /* Define espaçamento e centraliza a div */
+}
+
+.container_neutro>div {
+    flex: 1 1 280px;
+    padding: 5px;
+}
+
+.table {
+    width: 90%;
+    color: #fff;
+
+    margin: 20px auto;
+    /* Centraliza a tabela horizontalmente */
+    border-radius: 8px;
+    /* Adiciona bordas arredondadas */
+    overflow: hidden;
+    /* Evita que o conteúdo saia das bordas */
+}
+
+.table th {
+    background: linear-gradient(to right, #ff5757, #8c52ff);
+    color: #fff;
+}
+
+
+.container_login {
+    background-color: #06102e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+    border-radius: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+
+    margin:30px;
+}
+
+.container_login>div {
+    flex: 1 1 280px;
+    padding: 10px;
+}
+
+form {
+    background-color: #101728;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+    border-radius: 20px;
+    /* Bordas arredondadas */
+
+    width: 40vw;
+    margin: 20px;
+    padding: 20px;
+}
+
+.logo-video {
+    width: 35vw;
+    height: 30vw;
+    object-fit: cover;
+    /* Evita distorções no vídeo */
+    border-radius: 20px;
+}
