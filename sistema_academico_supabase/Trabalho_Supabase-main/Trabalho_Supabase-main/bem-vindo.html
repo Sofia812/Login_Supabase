@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+    <!-- Define o conjunto de caracteres como UTF-8, permitindo acentos e caracteres especiais -->
+    <meta charset="UTF-8">
+    
+    <!-- Define a configuração da viewport para responsividade em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Define o título da página exibido na aba do navegador -->
+    <title>Bem-vindo</title>
+    
+    <!-- Importa um arquivo CSS externo chamado "style.css" para estilização da página -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <!-- Título principal da página que será atualizado dinamicamente pelo JavaScript -->
+    <h1 class="login_title" id="mensagem">Carregando...</h1>
+
+    <!-- Botão que chama a função logout() ao ser clicado -->
+    <button class="botoes" onclick="logout()">Sair</button>
+
+    <script>
+        // Obtém o email do usuário armazenado no localStorage
+        const usuarioEmail = localStorage.getItem("usuarioEmail");
+
+        // Verifica se há um email armazenado
+        if (usuarioEmail) {
+            // Se houver um email, exibe a mensagem de boas-vindas com o email do usuário
+            document.getElementById("mensagem").innerText = `Bem-vindo, ${usuarioEmail}!`;
+        } else {
+            // Se não houver email armazenado, informa que o usuário não está autenticado
+            document.getElementById("mensagem").innerText = "Usuário não autenticado!";
+        }
+
+        // Função para realizar logout
+        function logout() {
+            // Remove o email do usuário do localStorage
+            localStorage.removeItem("usuarioEmail");
+            
+            // Redireciona o usuário para a página de cadastro
+            window.location.href = "cadastro.html";
+        }
+    </script>
+
+</body>
+</html>
+
