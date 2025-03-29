@@ -10,6 +10,9 @@
 
     <link rel="stylesheet" href="css/estilo.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script language="JavaScript" src="java/script_supabase.js" defer></script>
+
     <title>SisAcademy</title>
 </head>
 
@@ -290,19 +293,26 @@
             </video>
         </div>
 
+
+
+        
+
         <div>
             <!-- Formulário de login no rodapé -->
-            <form>
+            <form class="formulario" onsubmit="return false;">
                 <div class="mb-3">
                     <label for="usuario" class="form-label"><strong>Usuário</strong></label>
-                    <input type="text" class="form-control" id="usuario" placeholder="Digite seu usuário">
+                    <input type="email" id="email" class="form-control" placeholder="Digite seu email" required>
                 </div>
                 <div class="mb-3">
                     <label for="senha" class="form-label"><strong>Senha</strong></label>
-                    <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" width="10vw">
+                    <input type="password" id="senha" class="form-control" placeholder="Digite sua senha" required>
                 </div>
-                <button type="submit" class="btn btn-primary">Login</button>
+                <button type="submit" onclick="login()" class="btn btn-primary">Login</button>
+                <button type="submit" onclick="cadastrar()"class="btn btn-primary">Cadastrar</button>
+                <p id="mensagem"></p>
             </form>
+            
         </div>
     </div>
 

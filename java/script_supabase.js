@@ -27,7 +27,7 @@ async function login() {
       "Login realizado com sucesso!";
     localStorage.setItem("usuarioEmail", email);
     setTimeout(() => {
-      window.location.href = "bem-vindo.html";
+      window.location.href = "../landing_page/des_sistemas.html";
     }, 2000);
   }
 }
